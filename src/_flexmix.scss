@@ -1,0 +1,124 @@
+/*
+	flex-diretion: row(default) | row-reverse | column | column-reverse
+	short-version: r |  rr | cl | clr |
+
+	flex-wrap: 		wrap(default) | nowrap | wrap-reverse
+	short-version:		w | nw | wr
+
+	justify-content: flex-start(default) | flex-end | center | space-between | space-around
+	short-verion: fs | fe | c | sb | sa
+
+	align-items: flex-start | flex-end | center | baseline | stretch(default)
+	short-verion: fs | fe | c | b | s
+
+	align-content: flex-start | flex-end | center | space-between | space-around | stretch(default)
+	short-verion: fs | fe | c | sb | sa | s
+*/
+//	Normal version
+
+// Normal version
+@mixin flex-cont($direction:null, $wrap:null, $justify-content:null, $align-items:null, $align-content:null){
+	// Setup the display property
+	display: flex;
+
+	//	$direction(flex-direction)
+	@if $direction == r			{flex-direction: row;};
+	@if $direction == rr		{flex-direction: row-reverse;};
+	@if $direction == cl		{flex-direction: column;};
+  @if $direction == clr		{flex-direction: column-reverse;};
+	@if $direction != r or $direction != rr or $direction != cl or $direction != clr{
+		flex-direction: $direction;
+	}
+
+	//	$wrap(flex-wrap)
+	@if $wrap == w		{flex-wrap: wrap;};
+	@if $wrap == nw		{flex-wrap: nowrap;};
+	@if $wrap == wr		{flex-wrap: wrap-reverse;};
+	@if $wrap != w or $wrap != nw or $wrap != wr{
+		flex-wrap: $wrap;
+	}
+	//	$justify-content(justify-content)
+	@if $justify-content == fs 	{justify-content: flex-start};
+	@if $justify-content == fe 	{justify-content: flex-end};
+	@if $justify-content == c 	{justify-content: center};
+	@if $justify-content == sb 	{justify-content: space-between};
+	@if $justify-content == sa 	{justify-content: space-around};
+	@if $justify-content != fs or $justify-content != fe or $justify-content != c or $justify-content != sb or $justify-content != sa{
+		justify-content: $justify-content;
+	}
+
+  //	$align-items (align-items)
+	@if $align-items == fs	{align-items: flex-start;};
+	@if $align-items == fe	{align-items: flex-end;};
+	@if $align-items == c		{align-items: center;};
+	@if $align-items == b		{align-items: baseline;};
+	@if $align-items == s		{align-items: stretch;};
+	@if $align-items != fs or $align-items != fe or $align-items != c or $align-items != b or $align-items != s{
+		align-items: $align-items;
+	}
+
+  //	$align-content (align-content)
+	@if $align-content == fs		{align-content: flex-start;};
+	@if $align-content == fe		{align-content: flex-end;};
+	@if $align-content == c			{align-content: center;};
+	@if $align-content == sb		{align-content: space-between;};
+	@if $align-content == sa		{align-content: space-around;};
+	@if $align-content == s			{align-content: stretch;};
+	@if $align-content != fs or $align-content != fe or $align-content != c or $align-content != sb or $align-content != sa or $align-content != s {
+		align-content: $align-content;
+	}
+};
+
+//	Short version
+@mixin fc($direction:null, $wrap:null, $justify-content:null, $align-items:null, $align-content:null){
+	// Setup the display property
+	display: flex;
+
+	//	$direction(flex-direction)
+	@if $direction == r			{flex-direction: row;};
+	@if $direction == rr		{flex-direction: row-reverse;};
+	@if $direction == cl		{flex-direction: column;};
+  @if $direction == clr		{flex-direction: column-reverse;};
+	@if $direction != r or $direction != rr or $direction != cl or $direction != clr{
+		flex-direction: $direction;
+	}
+
+  //	$wrap(flex-wrap)
+	@if $wrap == w		{flex-wrap: wrap;};
+	@if $wrap == nw		{flex-wrap: nowrap;};
+	@if $wrap == wr		{flex-wrap: wrap-reverse;};
+	@if $wrap != w or $wrap != nw or $wrap != wr{
+		flex-wrap: $wrap;
+	}
+
+  //	$justify-content(justify-content)
+	@if $justify-content == fs 	{justify-content: flex-start};
+	@if $justify-content == fe 	{justify-content: flex-end};
+	@if $justify-content == c 	{justify-content: center};
+	@if $justify-content == sb 	{justify-content: space-between};
+	@if $justify-content == sa 	{justify-content: space-around};
+	@if $justify-content != fs or $justify-content != fe or $justify-content != c or $justify-content != sb or $justify-content != sa{
+		justify-content: $justify-content;
+	}
+
+  //	$align-items(align-items)
+	@if $align-items == fs	{align-items: flex-start;};
+	@if $align-items == fe	{align-items: flex-end;};
+	@if $align-items == c		{align-items: center;};
+	@if $align-items == b		{align-items: baseline;};
+	@if $align-items == s		{align-items: stretch;};
+	@if $align-items != fs or $align-items != fe or $align-items != c or $align-items != b or $align-items != s{
+		align-items: $align-items;
+	}
+
+  //	$align-content(align-content)
+	@if $align-content == fs		{align-content: flex-start;};
+	@if $align-content == fe		{align-content: flex-end;};
+	@if $align-content == c			{align-content: center;};
+	@if $align-content == sb		{align-content: space-between;};
+	@if $align-content == sa		{align-content: space-around;};
+	@if $align-content == s			{align-content: stretch;};
+	@if $align-content != fs or $align-content != fe or $align-content != c or $align-content != sb or $align-content != sa or $align-content != s {
+		align-content: $align-content;
+	}
+};

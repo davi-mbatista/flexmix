@@ -1,0 +1,26 @@
+{
+  "name": "flexmix",
+  "version": "1.0.0",
+  "description": "A Sass mixing that makes working with flexbox ease and quick!",
+  "main": "src/_flexmix.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davi-mbatista/flexmix.git"
+  },
+  "keywords": [
+    "flexbox",
+    "sass",
+    "mixing",
+    "scss",
+    "css"
+  ],
+  "author": "https://github.com/davi-mbatista/",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davi-mbatista/flexmix/issues"
+  },
+  "homepage": "https://github.com/davi-mbatista/flexmix#readme"
+}
