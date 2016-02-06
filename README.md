@@ -12,7 +12,7 @@ or bower:
 	bower install flexmix --save
 ````
 ### Setup
-Just `@import` flexmix on your sass or scss file.
+Just `@import` flexmix in your sass or scss file.
 
 ### Usage
 #### So.. you wanna be a cool kid and use flexbox on your project? No problem!
