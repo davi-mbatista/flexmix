@@ -65,9 +65,11 @@ check this:
 
 Nice hum?
 
+You can even use both ways and write the short version or the normal version of flexmix.
+
 Now you can write flexbox properties really really fast, just follow the only rule and you're a good to go.
 
-## Properties:
+## Properties shortcuts:
 
 | flex-direction					| flex-wrap							| justify-content 			|
 | ------------- 					| -------------					|	-----------						|

@@ -1,8 +1,8 @@
 {
   "name": "flexmix",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "A Sass mixing that makes working with flexbox ease and quick!",
-  "main": "src/_flexmix.scss",
+  "main": "dist/_flexmix.scss",
   "authors": [
     "https://github.com/davi-mbatista/"
   ],
