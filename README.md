@@ -1,4 +1,4 @@
-	# Flexmix
+# Flexmix
 > A Sass mixing that makes working with flexbox ease and quick!
 
 #### So.. you wanna be a cool kid and use flexbox on your project? No problem!
@@ -57,17 +57,17 @@ Now you can write flexbox properties really really fast, just follow the only ru
 
 | flex-direction					| flex-wrap							| justify-content 			|
 | ------------- 					| -------------					|	-----------						|
-| row *or* r  						| wrap *or* w						| flex-start *or* fs		|
-| row-reverse *or* rr			| nowrap *or* nw				|	flex-end *or* fe			|
-| column *or* cl					|	wrap-reverse *or* wr	|	center *or* c					|
-| column-reverse *or* clr	|												|	space-between *or* sb	|
-|													|												|	space-around *or* sa	|
+| `row` *or* `r`  						| `wrap` *or* `w`						| `flex-start` *or* `fs`		|
+| `row-reverse` *or* `rr`			| `nowrap` *or* `nw`				|	`flex-end` *or* `fe`			|
+| `column` *or* `cl`					|	`wrap-reverse` *or* `wr`	|	`center` *or* `c`					|
+| `column-reverse` *or* `clr`	|												|	`space-between` *or* `sb`	|
+|													|												|	`space-around` *or* `sa`	|
 
 | align-items							| align-content					|
 | ------------- 					| -------------					|
-| flex-start *or* fs  		| flex-start *or* fs		|
-| flex-end *or* fe				|	flex-end *or* fe			|
-| center *or* c						|	center *or* c					|
-| baseline *or* b					|	space-between *or* sb	|
-|	stretch	*or*  s					|	space-around *or* sa	|
-|													|	stretch	*or*  s				|
+| `flex-start` *or* `fs`  		| `flex-start` *or* `fs`		|
+| `flex-end` *or* `fe`				|	`flex-end` *or* `fe`			|
+| `center` *or* `c`						|	`center` *or* `c`					|
+| `baseline` *or* `b`					|	`space-between` *or* `sb`	|
+|	`stretch`	*or*  `s`					|	`space-around` *or* `sa`	|
+|													|	`stretch`	*or*  `s`				|
