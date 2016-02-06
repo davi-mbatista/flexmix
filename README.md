@@ -1,6 +1,15 @@
 # Flexmix
 > A Sass mixing that makes working with flexbox ease and quick!
 
+###Install
+
+You can get it on npm:
+	npm install flexmix --save
+
+or bower:
+	bower install flexmix --save
+
+
 #### So.. you wanna be a cool kid and use flexbox on your project? No problem!
 
 flexmix is a easy to use, sass mixing (more like a shortcut) that helps you to write flexbox properties as quick as possible. check this out:

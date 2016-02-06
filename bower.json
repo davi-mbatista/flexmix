@@ -1,0 +1,25 @@
+{
+  "name": "flexmix",
+  "description": "A Sass mixing that makes working with flexbox ease and quick!",
+  "main": "src/_flexmix.scss",
+  "authors": [
+    "https://github.com/davi-mbatista/"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "flexbox",
+    "sass",
+    "mixing",
+    "scss",
+    "css"
+  ],
+  "homepage": "https://github.com/davi-mbatista/flexmix",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
