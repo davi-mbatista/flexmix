@@ -1,5 +1,5 @@
 # Flexmix
-> A Sass mixing that makes working with flexbox ease and quick!
+> A Sass mixing that makes working with flexbox easy and quick!
 
 ### Installation
 
@@ -102,7 +102,7 @@ Now you can write flexbox properties really really fast. just follow the ***only
 |	`stretch`	*or*  `s`					|	`space-around` *or* `sa`	|
 |															|	`stretch`	*or*  `s`				|
 
-**disclaimer:** For now, I don't have any plans to make flexmix work for flexbox items, because of the `flex:` shorthand that is already really ease to use.
+**disclaimer:** For now, I don't have any plans to make flexmix work for flexbox items, because of the `flex:` shorthand that is already really easy to use.
 
 
 ## Next step
