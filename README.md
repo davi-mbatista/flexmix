@@ -1,7 +1,7 @@
 # Flexmix
 > A Sass mixing that makes working with flexbox ease and quick!
 
-### Install
+### Installation
 
 You can get it on npm:
 ````
@@ -12,15 +12,15 @@ or bower:
 	bower install flexmix --save
 ````
 ### Setup
-Just `@import` flexmix in your sass or scss file.
+Just `@import` flexmix in your sass or scss file and you're good to go.
 
 ### Usage
 #### So.. you wanna be a cool kid and use flexbox on your project? No problem!
 
-flexmix is a easy to use, sass mixing (more like a shortcut) that helps you to write flexbox properties as quick as possible. check this out:
+flexmix is a easy to use sass mixing (actually, more like a shortcut) that helps you to write flexbox properties as quick as possible. check this out:
 
 	.my-container{
-	 @include flex-cont(row, nowrap, flex-start, center, center);
+	 @include flex-container(row, nowrap, flex-start, center, center);
 	}
 
 	// results in:
@@ -34,15 +34,17 @@ flexmix is a easy to use, sass mixing (more like a shortcut) that helps you to w
 	}
 
 
-This is pretty straightforward and now you might know what I'm talking about. The only rule is the order of things. ***For now, flexmix only works if you follow this order of properties on the mixing:***
+That was pretty straightforward. The only rule is the order of things. *For now, flexmix only works if you follow this order of properties on the mixing:*
 
-	flex-cont(flex-direction, flex-wrap, justify-content, align-items, align-content);
+`flex-direction` > `flex-wrap` > `justify-content` > `align-items` > `align-content`
 
-"Why?" you may ask. Well, at this moment I can't figure it out how to set us free from this, but if you, my dear fellow sass-hacker-master-coder-xtreme-developer know how to do it, just feel free to fork me =)
+*If you wanna know more about flexbox, check this [complete guide to flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) by Chris Coyier on css-tricks*
+
+"Why?" you may ask. Well, at this moment I can't figure it out how to set us free from this, but, if you my dear fellow sass-hacker-master-coder-extreme-developer know how to do it, just feel free to fork me =)
 
 ## ...but, you also may ask:
-##### "Ok, I got it. But can I do this faster?"
-##### "I have bills to pay! Can it be more quick?"
+##### "Ok, I got it. But can I do this quickly?"
+##### "I have bills to pay! Can it be more faster?"
 ##### "My cat is having some trouble to poop in the right place, can you help me?"
 
 My answer for you is: Yes! Sure! Probably not.
@@ -50,7 +52,7 @@ My answer for you is: Yes! Sure! Probably not.
 check this:
 
 	my-second-container{			
-	 @include fc(r, nw, fs, c, c);
+	 @include flex-container(r, nw, fs, c, c);
 	}
 
 	// results in:
@@ -63,11 +65,24 @@ check this:
 	 align-content: center;
 	}
 
-Nice hum?
+just like that!
 
-You can even use both ways and write the short version or the normal version of flexmix.
+You can even shorten the mixing name to `@include fc()` and use both ways to write. In fact, you can mix it up everything.
+````
 
-Now you can write flexbox properties really really fast, just follow the only rule and you're a good to go.
+	@include fc(row, nw, c, space-around, s);
+
+````
+*or*
+
+````
+
+	@include flex-container(cl, rr, fs, baseline, center);
+
+````
+
+
+Now you can write flexbox properties really really fast. just follow the ***only rule*** and you're a good to go. Take a look on the shortcuts names bellow and have fun!
 
 ## Properties shortcuts:
 
@@ -89,4 +104,8 @@ Now you can write flexbox properties really really fast, just follow the only ru
 |													|	`stretch`	*or*  `s`				|
 
 
-#### ***Have fun!***
+**disclaimer:** For now, I don't have plans to make flexmix work for flexbox items because of the `flex:` shorthand that is already fast.
+
+## License
+
+This project is licensed under the terms of the [MIT License](http://mit-license.org/).
