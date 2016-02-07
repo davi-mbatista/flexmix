@@ -85,15 +85,22 @@ Now you can write flexbox properties really really fast. just follow the ***only
 
 ## Properties and shortcuts:
 
-| flex-direction							| flex-wrap									| justify-content 					|	align-items									|	align-content							|
-| ------------- 							| -------------							|	-----------								|	-------------								|	-------------							|
-| `row` *or* `r`  						| `wrap` *or* `w`						| `flex-start` *or* `fs`		|	`flex-start` *or* `fs`			|	`flex-start` *or* `fs`		|
-| `row-reverse` *or* `rr`			| `nowrap` *or* `nw`				|	`flex-end` *or* `fe`			|	`flex-end` *or* `fe`				|	`flex-end` *or* `fe`			|
-| `column` *or* `cl`					|	`wrap-reverse` *or* `wr`	|	`center` *or* `c`					|	`center` *or* `c`						|	`center` *or* `c`					|
-| `column-reverse` *or* `clr`	|														|	`space-between` *or* `sb`	|	`baseline` *or* `b`					|	`space-between` *or* `sb`	|
-|															|														|	`space-around` *or* `sa`	|	`stretch`	*or*  `s					|	`space-around` *or* `sa`	|
-|															|														|														|															|	`stretch`	*or*  `s`				|
+| flex-direction							| flex-wrap									| justify-content						|
+| ------------- 							| -------------							|	-----------								|
+| `row` *or* `r`  						| `wrap` *or* `w`						| `flex-start` *or* `fs`		|
+| `row-reverse` *or* `rr`			| `nowrap` *or* `nw`				|	`flex-end` *or* `fe`			|
+| `column` *or* `cl`					|	`wrap-reverse` *or* `wr`	|	`center` *or* `c`					|
+| `column-reverse` *or* `clr`	|														|	`space-between` *or* `sb`	|
+|															|														|	`space-around` *or* `sa`	|
 
+| align-items									| align-content							|
+| ------------- 							| -------------							|
+| `flex-start` *or* `fs`  		| `flex-start` *or* `fs`		|
+| `flex-end` *or* `fe`				|	`flex-end` *or* `fe`			|
+| `center` *or* `c`						|	`center` *or* `c`					|
+| `baseline` *or* `b`					|	`space-between` *or* `sb`	|
+|	`stretch`	*or*  `s`					|	`space-around` *or* `sa`	|
+|															|	`stretch`	*or*  `s`				|
 
 **disclaimer:** For now, I don't have any plans to make flexmix work for flexbox items, because of the `flex:` shorthand that is already really ease to use.
 
