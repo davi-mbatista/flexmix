@@ -32,13 +32,12 @@ flexmix is a easy to use sass mixing (actually, more like a shortcut) that helps
 	 align-items: center;
 	 align-content: center;
 	}
-
+	
+*If you wanna know more about flexbox, check this [complete guide to flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) by Chris Coyier on css-tricks*
 
 That was pretty straightforward. The only rule is the order of things. *For now, flexmix only works if you follow this order of properties on the mixing:*
 
 `flex-direction` > `flex-wrap` > `justify-content` > `align-items` > `align-content`
-
-*If you wanna know more about flexbox, check this [complete guide to flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) by Chris Coyier on css-tricks*
 
 "Why?" you may ask. Well, at this moment I can't figure it out how to set us free from this, but, if you my dear fellow sass-hacker-master-coder-extreme-developer know how to do it, just feel free to fork me =)
 
