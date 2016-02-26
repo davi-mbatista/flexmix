@@ -1,6 +1,6 @@
 {
   "name": "flexmix",
-	"version": "1.5.0",
+	"version": "1.6.0",
 	"description": "A Sass mixing that makes working with flexbox ease and quick!",
   "main": "dist/_flexmix.scss",
   "authors": [

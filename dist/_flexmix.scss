@@ -1,6 +1,7 @@
 // Normal version
 @mixin flex-cont($direction:null, $wrap:null, $justify-content:null, $align-items:null, $align-content:null){
 	// Setup the display property
+	-js-display: flex; // Suport for flexibility.js
 	display: flex;
 
 	//	$direction(flex-direction)
@@ -153,6 +154,7 @@
 //	Short version
 @mixin fc($direction:null, $wrap:null, $justify-content:null, $align-items:null, $align-content:null){
 	// Setup the display property
+	-js-display: flex; // Suport for flexibility.js
 	display: flex;
 
 	//	$direction(flex-direction)
