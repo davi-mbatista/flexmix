@@ -1,5 +1,5 @@
 # Flexmix
-> A Sass mixing that make your work with flexbox easy and quick!
+> A Sass mixin that make your work with flexbox easy and quick!
 
 ### Installation
 
@@ -17,14 +17,15 @@ Just `@import` flexmix in your sass or scss file and you're good to go.
 ### Usage
 #### So.. do you wanna be a cool kid and use flexbox on your project? No problem!
 
-flexmix is a easy-to-use sass mixing(actually, more like a shortcut) that helps you to write flexbox properties as quick as possible. check this out:
+flexmix is a easy-to-use sass mixin(actually, more like a shortcut) that helps you to write flexbox properties as quick as possible. check this out:
 
 	.my-container{
-	 @include flex-container(row, nowrap, flex-start, center, center);
+	 @include flexmix(row, nowrap, flex-start, center, center);
 	}
 
 	// results in:
 	.my-container{
+	 -js-display: flex; //Added support to Flexibility [read more about it](https://github.com/10up/flexibility)
 	 display: flex;
 	 flex-direction: row;
 	 flex-wrap: nowrap;
@@ -35,7 +36,7 @@ flexmix is a easy-to-use sass mixing(actually, more like a shortcut) that helps 
 
 *If you wanna know more about flexbox, see this [complete guide to flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) by Chris Coyier on css-tricks*
 
-That was pretty easy! The only rule is the order of things. *For now, flexmix only works if you follow this order of properties on the mixing:*
+That was pretty easy! The only rule is the order of things. *For now, flexmix only works if you follow this order of properties on the mixin:*
 
 `flex-direction` > `flex-wrap` > `justify-content` > `align-items` > `align-content`
 
@@ -51,11 +52,12 @@ My answer for you is: Yes! Sure! Probably not.
 check this:
 
 	my-second-container{			
-	 @include flex-container(r, nw, fs, c, c);
+	 @include flexmix(r, nw, fs, c, c);
 	}
 
 	// results in:
 	my-second-container{
+	 -js-display: flex; //Added support to Flexibility [read more about it](https://github.com/10up/flexibility)
 	 display: flex;
 	 flex-direction: row;
 	 flex-wrap: nowrap;
@@ -66,17 +68,24 @@ check this:
 
 just like that!
 
-You can even shorten the mixing name to `@include fc()` and use both ways to write. In fact, you can mix everything.
+You can even shorten the mixin name to `@include flmx()` or `@include fm()` and use both ways to write. In fact, you can mix everything. Whatever that works for you.
 ````
 
-	@include fc(row, nw, c, space-around, s);
+	@include fm(row, nw, c, space-around, s);
 
 ````
 *or*
 
 ````
 
-	@include flex-container(cl, rr, fs, baseline, center);
+	@include flmx(row, rr, fs, baseline, center);
+
+````
+*or*
+
+````
+
+	@include flexmix(rr, wr, c, s, c);
 
 ````
 
