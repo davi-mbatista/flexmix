@@ -25,7 +25,7 @@ flexmix is a easy-to-use sass mixin(actually, more like a shortcut) that helps y
 
 	// results in:
 	.my-container{
-	 -js-display: flex; //Added support to Flexibility [read more about it](https://github.com/10up/flexibility)
+	 -js-display: flex; //Added support to Flexibility (https://github.com/10up/flexibility)
 	 display: flex;
 	 flex-direction: row;
 	 flex-wrap: nowrap;
@@ -57,7 +57,7 @@ check this:
 
 	// results in:
 	my-second-container{
-	 -js-display: flex; //Added support to Flexibility [read more about it](https://github.com/10up/flexibility)
+	 -js-display: flex; //Added support to Flexibility (https://github.com/10up/flexibility)
 	 display: flex;
 	 flex-direction: row;
 	 flex-wrap: nowrap;
