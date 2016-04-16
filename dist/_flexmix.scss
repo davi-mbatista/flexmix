@@ -1,15 +1,16 @@
-// Normal version
+/* Made with love by @davi_mb */
+
+//	Normal version
 @mixin flexmix($direction:null, $wrap:null, $justify-content:null, $align-items:null, $align-content:null){
 	// Setup the display property
-	-js-display: flex; // Suport for flexibility.js
 	display: flex;
 
 	//	$direction(flex-direction)
-	@if $direction == r			{flex-direction: row;};
-	@if $direction == rr		{flex-direction: row-reverse;};
-	@if $direction == cl		{flex-direction: column;};
-  @if $direction == clr		{flex-direction: column-reverse;};
-	@if (
+	@if $direction == r			{flex-direction: row;
+	} @else if $direction == rr		{flex-direction: row-reverse;
+	} @else if $direction == cl		{flex-direction: column;
+	} @else if $direction == clr		{flex-direction: column-reverse;
+	} @else if (
 				($direction != null)						and
 				($direction != r)								and
 				($direction != row) 						and
@@ -32,10 +33,10 @@
 			};
 
 	//	$wrap(flex-wrap)
-	@if $wrap == w		{flex-wrap: wrap;};
-	@if $wrap == nw		{flex-wrap: nowrap;};
-	@if $wrap == wr		{flex-wrap: wrap-reverse;};
-	@if (
+	@if $wrap == w		{flex-wrap: wrap;
+	} @else if $wrap == nw		{flex-wrap: nowrap;
+	} @else if $wrap == wr		{flex-wrap: wrap-reverse;
+	} @else if (
 				($wrap != null)						and
 				($wrap != w)							and
 				($wrap != wrap) 					and
@@ -55,12 +56,12 @@
 			};
 
 	//	$justify-content(justify-content)
-	@if $justify-content == fs 	{justify-content: flex-start};
-	@if $justify-content == fe 	{justify-content: flex-end};
-	@if $justify-content == c 	{justify-content: center};
-	@if $justify-content == sb 	{justify-content: space-between};
-	@if $justify-content == sa 	{justify-content: space-around};
-	@if (
+	@if $justify-content == fs 	{justify-content: flex-start
+	} @else if $justify-content == fe 	{justify-content: flex-end
+	} @else if $justify-content == c 	{justify-content: center
+	} @else if $justify-content == sb 	{justify-content: space-between
+	} @else if $justify-content == sa 	{justify-content: space-around
+	} @else if (
 			($justify-content != null)					and
 			($justify-content != fs)						and
 			($justify-content != flex-start) 		and
@@ -86,12 +87,13 @@
 			};
 
   //	$align-items (align-items)
-	@if $align-items == fs	{align-items: flex-start;};
-	@if $align-items == fe	{align-items: flex-end;};
-	@if $align-items == c		{align-items: center;};
-	@if $align-items == b		{align-items: baseline;};
-	@if $align-items == s		{align-items: stretch;};
-	@if (
+	@if $align-items == fs	{align-items: flex-start;
+	} @else if $align-items == fe	{align-items: flex-end;
+	} @else if $align-items == c		{align-items: center;
+	} @else if $align-items == bs		{align-items: baseline;
+	} @else if $align-items == b		{align-items: baseline;
+	} @else if $align-items == s		{align-items: stretch;
+	} @else if (
 			($align-items != null)				and
 			($align-items != fs)					and
 			($align-items != flex-start)	and
@@ -100,6 +102,7 @@
 			($align-items != c)						and
 			($align-items != center)			and
 			($align-items != b) 					and
+			($align-items != bs) 					and
 			($align-items != baseline)		and
 			($align-items != s)						and
 			($align-items != stretch)
@@ -117,13 +120,13 @@
 			};
 
   //	$align-content (align-content)
-	@if $align-content == fs		{align-content: flex-start;};
-	@if $align-content == fe		{align-content: flex-end;};
-	@if $align-content == c			{align-content: center;};
-	@if $align-content == sb		{align-content: space-between;};
-	@if $align-content == sa		{align-content: space-around;};
-	@if $align-content == s			{align-content: stretch;};
-	@if (
+	@if $align-content == fs		{align-content: flex-start;
+	} @else if $align-content == fe		{align-content: flex-end;
+	} @else if $align-content == c			{align-content: center;
+	} @else if $align-content == sb		{align-content: space-between;
+	} @else if $align-content == sa		{align-content: space-around;
+	} @else if $align-content == s			{align-content: stretch;
+	} @else if (
 			($align-content != null)					and
 			($align-content != fs)						and
 			($align-content != flex-start)		and
@@ -150,20 +153,20 @@
 			){
 				align-content: $align-content;
 			};
+
 };
 
-//	Redux version
+// 	Redux version
 @mixin flmx($direction:null, $wrap:null, $justify-content:null, $align-items:null, $align-content:null){
 	// Setup the display property
-	-js-display: flex; // Suport for flexibility.js
 	display: flex;
 
 	//	$direction(flex-direction)
-	@if $direction == r			{flex-direction: row;};
-	@if $direction == rr		{flex-direction: row-reverse;};
-	@if $direction == cl		{flex-direction: column;};
-	@if $direction == clr		{flex-direction: column-reverse;};
-	@if (
+	@if $direction == r			{flex-direction: row;
+	} @else if $direction == rr		{flex-direction: row-reverse;
+	} @else if $direction == cl		{flex-direction: column;
+	} @else if $direction == clr		{flex-direction: column-reverse;
+	} @else if (
 				($direction != null)						and
 				($direction != r)								and
 				($direction != row) 						and
@@ -186,10 +189,10 @@
 			};
 
 	//	$wrap(flex-wrap)
-	@if $wrap == w		{flex-wrap: wrap;};
-	@if $wrap == nw		{flex-wrap: nowrap;};
-	@if $wrap == wr		{flex-wrap: wrap-reverse;};
-	@if (
+	@if $wrap == w		{flex-wrap: wrap;
+	} @else if $wrap == nw		{flex-wrap: nowrap;
+	} @else if $wrap == wr		{flex-wrap: wrap-reverse;
+	} @else if (
 				($wrap != null)						and
 				($wrap != w)							and
 				($wrap != wrap) 					and
@@ -209,12 +212,12 @@
 			};
 
 	//	$justify-content(justify-content)
-	@if $justify-content == fs 	{justify-content: flex-start};
-	@if $justify-content == fe 	{justify-content: flex-end};
-	@if $justify-content == c 	{justify-content: center};
-	@if $justify-content == sb 	{justify-content: space-between};
-	@if $justify-content == sa 	{justify-content: space-around};
-	@if (
+	@if $justify-content == fs 	{justify-content: flex-start
+	} @else if $justify-content == fe 	{justify-content: flex-end
+	} @else if $justify-content == c 	{justify-content: center
+	} @else if $justify-content == sb 	{justify-content: space-between
+	} @else if $justify-content == sa 	{justify-content: space-around
+	} @else if (
 			($justify-content != null)					and
 			($justify-content != fs)						and
 			($justify-content != flex-start) 		and
@@ -240,12 +243,13 @@
 			};
 
 	//	$align-items (align-items)
-	@if $align-items == fs	{align-items: flex-start;};
-	@if $align-items == fe	{align-items: flex-end;};
-	@if $align-items == c		{align-items: center;};
-	@if $align-items == b		{align-items: baseline;};
-	@if $align-items == s		{align-items: stretch;};
-	@if (
+	@if $align-items == fs	{align-items: flex-start;
+	} @else if $align-items == fe	{align-items: flex-end;
+	} @else if $align-items == c		{align-items: center;
+	} @else if $align-items == bs		{align-items: baseline;
+	} @else if $align-items == b		{align-items: baseline;
+	} @else if $align-items == s		{align-items: stretch;
+	} @else if (
 			($align-items != null)				and
 			($align-items != fs)					and
 			($align-items != flex-start)	and
@@ -254,6 +258,7 @@
 			($align-items != c)						and
 			($align-items != center)			and
 			($align-items != b) 					and
+			($align-items != bs) 					and
 			($align-items != baseline)		and
 			($align-items != s)						and
 			($align-items != stretch)
@@ -271,13 +276,13 @@
 			};
 
 	//	$align-content (align-content)
-	@if $align-content == fs		{align-content: flex-start;};
-	@if $align-content == fe		{align-content: flex-end;};
-	@if $align-content == c			{align-content: center;};
-	@if $align-content == sb		{align-content: space-between;};
-	@if $align-content == sa		{align-content: space-around;};
-	@if $align-content == s			{align-content: stretch;};
-	@if (
+	@if $align-content == fs		{align-content: flex-start;
+	} @else if $align-content == fe		{align-content: flex-end;
+	} @else if $align-content == c			{align-content: center;
+	} @else if $align-content == sb		{align-content: space-between;
+	} @else if $align-content == sa		{align-content: space-around;
+	} @else if $align-content == s			{align-content: stretch;
+	} @else if (
 			($align-content != null)					and
 			($align-content != fs)						and
 			($align-content != flex-start)		and
@@ -304,20 +309,20 @@
 			){
 				align-content: $align-content;
 			};
+
 };
 
 //	Short version
 @mixin fm($direction:null, $wrap:null, $justify-content:null, $align-items:null, $align-content:null){
 	// Setup the display property
-	-js-display: flex; // Suport for flexibility.js
 	display: flex;
 
 	//	$direction(flex-direction)
-	@if $direction == r			{flex-direction: row;};
-	@if $direction == rr		{flex-direction: row-reverse;};
-	@if $direction == cl		{flex-direction: column;};
-	@if $direction == clr		{flex-direction: column-reverse;};
-	@if (
+	@if $direction == r			{flex-direction: row;
+	} @else if $direction == rr		{flex-direction: row-reverse;
+	} @else if $direction == cl		{flex-direction: column;
+	} @else if $direction == clr		{flex-direction: column-reverse;
+	} @else if (
 				($direction != null)						and
 				($direction != r)								and
 				($direction != row) 						and
@@ -340,10 +345,10 @@
 			};
 
 	//	$wrap(flex-wrap)
-	@if $wrap == w		{flex-wrap: wrap;};
-	@if $wrap == nw		{flex-wrap: nowrap;};
-	@if $wrap == wr		{flex-wrap: wrap-reverse;};
-	@if (
+	@if $wrap == w		{flex-wrap: wrap;
+	} @else if $wrap == nw		{flex-wrap: nowrap;
+	} @else if $wrap == wr		{flex-wrap: wrap-reverse;
+	} @else if (
 				($wrap != null)						and
 				($wrap != w)							and
 				($wrap != wrap) 					and
@@ -363,12 +368,12 @@
 			};
 
 	//	$justify-content(justify-content)
-	@if $justify-content == fs 	{justify-content: flex-start};
-	@if $justify-content == fe 	{justify-content: flex-end};
-	@if $justify-content == c 	{justify-content: center};
-	@if $justify-content == sb 	{justify-content: space-between};
-	@if $justify-content == sa 	{justify-content: space-around};
-	@if (
+	@if $justify-content == fs 	{justify-content: flex-start
+	} @else if $justify-content == fe 	{justify-content: flex-end
+	} @else if $justify-content == c 	{justify-content: center
+	} @else if $justify-content == sb 	{justify-content: space-between
+	} @else if $justify-content == sa 	{justify-content: space-around
+	} @else if (
 			($justify-content != null)					and
 			($justify-content != fs)						and
 			($justify-content != flex-start) 		and
@@ -393,13 +398,14 @@
 				justify-content: $justify-content;
 			};
 
-	//	$align-items (align-items)
-	@if $align-items == fs	{align-items: flex-start;};
-	@if $align-items == fe	{align-items: flex-end;};
-	@if $align-items == c		{align-items: center;};
-	@if $align-items == b		{align-items: baseline;};
-	@if $align-items == s		{align-items: stretch;};
-	@if (
+  //	$align-items (align-items)
+	@if $align-items == fs	{align-items: flex-start;
+	} @else if $align-items == fe	{align-items: flex-end;
+	} @else if $align-items == c		{align-items: center;
+	} @else if $align-items == bs		{align-items: baseline;
+	} @else if $align-items == b		{align-items: baseline;
+	} @else if $align-items == s		{align-items: stretch;
+	} @else if (
 			($align-items != null)				and
 			($align-items != fs)					and
 			($align-items != flex-start)	and
@@ -408,6 +414,7 @@
 			($align-items != c)						and
 			($align-items != center)			and
 			($align-items != b) 					and
+			($align-items != bs) 					and
 			($align-items != baseline)		and
 			($align-items != s)						and
 			($align-items != stretch)
@@ -424,14 +431,14 @@
 				align-items: $align-items;
 			};
 
-	//	$align-content (align-content)
-	@if $align-content == fs		{align-content: flex-start;};
-	@if $align-content == fe		{align-content: flex-end;};
-	@if $align-content == c			{align-content: center;};
-	@if $align-content == sb		{align-content: space-between;};
-	@if $align-content == sa		{align-content: space-around;};
-	@if $align-content == s			{align-content: stretch;};
-	@if (
+  //	$align-content (align-content)
+	@if $align-content == fs		{align-content: flex-start;
+	} @else if $align-content == fe		{align-content: flex-end;
+	} @else if $align-content == c			{align-content: center;
+	} @else if $align-content == sb		{align-content: space-between;
+	} @else if $align-content == sa		{align-content: space-around;
+	} @else if $align-content == s			{align-content: stretch;
+	} @else if (
 			($align-content != null)					and
 			($align-content != fs)						and
 			($align-content != flex-start)		and
@@ -458,4 +465,5 @@
 			){
 				align-content: $align-content;
 			};
+
 };
