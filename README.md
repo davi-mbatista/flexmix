@@ -1,37 +1,42 @@
 # Flexmix
-> A Sass mixin that make your work with flexbox easy and quick!
+> A Sass mixin that makes working with flexbox easy and quick!
+
+### Update from the future 🚨
+Really old project. Use with caution.
 
 ### Installation
 
 You can get it on npm:
 ````
-	npm install flexmix --save
+npm install flexmix --save
 ````
 or bower:
 ````
-	bower install flexmix --save
+bower install flexmix --save
 ````
 ### Setup
 Just `@import` flexmix in your sass or scss file and you're good to go.
 
 ### Usage
-#### So.. do you wanna be a cool kid and use flexbox on your project? No problem!
+#### So.. do you wanna be a cool kid and use flexbox? No problem!
 
-flexmix is a easy-to-use sass mixin(actually, more like a shortcut) that helps you to write flexbox properties as quick as possible. check this out:
+flexmix is a easy-to-use sass mixin(actually, more like a shortcut) that helps you to write flexbox properties as quickly as possible. check this out:
 
-	.my-container{
-	 @include flexmix(row, nowrap, flex-start, center, center);
-	}
+```
+.my-container{
+ @include flexmix(row, nowrap, flex-start, center, center);
+}
 
-	// results in:
-	.my-container{
-	 display: flex;
-	 flex-direction: row;
-	 flex-wrap: nowrap;
-	 justify-content: flex-start;
-	 align-items: center;
-	 align-content: center;
-	}
+// results in:
+.my-container{
+ display: flex;
+ flex-direction: row;
+ flex-wrap: nowrap;
+ justify-content: flex-start;
+ align-items: center;
+ align-content: center;
+}
+```
 
 *If you wanna know more about flexbox, see this [complete guide to flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) by Chris Coyier on css-tricks*
 
@@ -39,52 +44,45 @@ That was pretty easy! The only rule is the order of things. *For now, flexmix on
 
 `flex-direction` > `flex-wrap` > `justify-content` > `align-items` > `align-content`
 
-"Why?" you may ask. Well, at this moment I can't figure it out how to set us free from this, but, if you my dear fellow sass-hacker-master-coder-extreme-developer know how to do it, just feel free to fork me =)
-
 ## ...but, you may also ask:
 ##### "Ok, I got it. But can I do this quickly?"
-##### "I have bills to pay! Can it be more faster?"
-##### "My cat is having some trouble to poop in the right place, can you help me?"
+##### "I have bills to pay! Can it be faster?"
+##### "My cat is pooping in the wrong place, can you help me?"
 
 My answer for you is: Yes! Sure! Probably not.
 
-check this:
+```
+my-second-container{			
+ @include flexmix(r, nw, fs, c, c);
+}
 
-	my-second-container{			
-	 @include flexmix(r, nw, fs, c, c);
-	}
-
-	// results in:
-	my-second-container{
-	 display: flex;
-	 flex-direction: row;
-	 flex-wrap: nowrap;
-	 justify-content: flex-start;
-	 align-items: center;
-	 align-content: center;
-	}
+// results in:
+my-second-container{
+ display: flex;
+ flex-direction: row;
+ flex-wrap: nowrap;
+ justify-content: flex-start;
+ align-items: center;
+ align-content: center;
+}
+```
 
 just like that!
 
-You can even shorten the mixin name to `@include flmx()` or `@include fm()` and use both ways to write. In fact, you can mix everything. Whatever that works for you.
-````
-
-	@include fm(row, nw, c, space-around, s);
+You can even shorten the mixin name to `@include flmx()` or `@include fm()`. In fact, you can mix everything. Whatever that works for you.
 
 ````
-*or*
-
-````
-
-	@include flmx(row, rr, fs, baseline, center);
-
+@include fm(row, nw, c, space-around, s);
 ````
 *or*
 
 ````
+@include flmx(row, rr, fs, baseline, center);
+````
+*or*
 
-	@include flexmix(rr, wr, c, s, c);
-
+````
+@include flexmix(rr, wr, c, s, c);
 ````
 
 
@@ -111,10 +109,6 @@ Now you can write flexbox properties really really fast. just follow the ***only
 
 **disclaimer:** For now, I don't have any plans to make flexmix work for flexbox items, because of the `flex:` shorthand that is already really easy to use.
 
-
-## Next step
-
-My next step is provide snippets for both Atom and Sublime Text and make this tool more natural as possible to your workflow.
 
 
 ## License
